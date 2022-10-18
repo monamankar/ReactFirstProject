@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import {useState} from 'react'
 
 
+
     function Register1(){
 
       return(
@@ -28,7 +29,7 @@ import {useState} from 'react'
 
           <Form.Group className="mb-3 pt-2" controlId="formBasicEmail">
             <div class="row"/>
-            <div class="col-sm-2"><Form.Label>Email address</Form.Label></div>
+            <div class="col-sm-2"><Form.Label>Email address:</Form.Label></div>
             <div class="col-sm-6">
             <Form.Control type="email" placeholder="Enter email" /></div>
           </Form.Group>
@@ -71,6 +72,7 @@ import {useState} from 'react'
             </div>
             </div>
           </div>
+          
           <Form.Group className="mb-3 pt-2" controlId="formBasicHobbies">
             <div class="row"/>
             <div class="col-sm-2"><Form.Label>Hobbies:</Form.Label></div>
@@ -128,8 +130,10 @@ import {useState} from 'react'
             <img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236"/></div> 
           </Form.Group>
 
+          <div class="container mt-3">
             <div class="row"/>
             <button type="button" class="btn btn-secondary">Submit</button></div>
+          </div>
           
   
       </Form>
