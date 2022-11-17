@@ -8,6 +8,7 @@ import ContactUs1 from './ContactUs1'
 import Login1 from './Login1'
 import Register1 from './Register1'
 import NoPage1 from './NoPage1' 
+import WeatherApi from './WeatherApi';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='contactus' element={<ContactUs1/> } />
         <Route path='login' element={<Login1/>} />
         <Route path='register' element={<Register1/>} />
+        <Route path='weather-api' element={<WeatherApi/>} />
         <Route path="*" element={<NoPage1 />} />
       </Routes>
    

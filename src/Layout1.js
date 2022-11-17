@@ -10,6 +10,8 @@ function Layout1() {
       <a href='/contactus'>Contact-Us</a><br/>
       <a href='/login'>Log-in</a><br/>
       <a href='/register'>Registeration</a><br/>
+      <a href='/weather-api'>WeatherApi</a><br/>
+      
       <Outlet/>
     </div>
   );

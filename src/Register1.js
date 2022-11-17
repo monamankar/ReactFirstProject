@@ -58,7 +58,7 @@ import {useState} from 'react'
             </div>
           </Form.Group>
           
-          <div class="container">
+          <div className="container">
             <div class="row">
               <label for="date" class="col-1 col-form-label">Date of Birth:</label>
             <div class="col-5">
@@ -104,7 +104,7 @@ import {useState} from 'react'
             <Form.Control type="text" placeholder="Enter Pincode" /></div>
           </Form.Group>
           
-          <div class="container mt-3">
+          <div className="container mt-3">
           <div class="dropdown">
             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
              Select City:
@@ -127,10 +127,10 @@ import {useState} from 'react'
             <div class="row"/>
             <div class="col-sm-2"><Form.Label>Image:</Form.Label></div>
             <div class="col-sm-6">
-            <img src="cinqueterre.jpg" class="rounded" alt="Cinque Terre" width="304" height="236"/></div> 
+            <img src="Image.jpg" class="rounded" alt="Image" width="304" height="236"/></div> 
           </Form.Group>
 
-          <div class="container mt-3">
+          <div className="container mt-3">
             <div class="row"/>
             <button type="button" class="btn btn-secondary">Submit</button></div>
           </div>
