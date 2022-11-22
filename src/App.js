@@ -9,6 +9,7 @@ import Login1 from './Login1'
 import Register1 from './Register1'
 import NoPage1 from './NoPage1' 
 import WeatherApi from './WeatherApi';
+import Login from './Login';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='register' element={<Register1/>} />
         <Route path='weather-api' element={<WeatherApi/>} />
         <Route path="*" element={<NoPage1 />} />
+        <Route path='Sign-in' element={<Login/>}/>
       </Routes>
    
     </BrowserRouter>
