@@ -2,7 +2,7 @@ import './App.css';
 import { Button } from 'react-bootstrap';
 import { useState } from 'react';
 
-function Login()
+function SignIn()
 { 
   const [username,setUsername]= useState();
   const [password,setPassword]= useState();
@@ -26,4 +26,4 @@ function Login()
     </> 
   ); 
 }
-export default Login;
+export default SignIn;
