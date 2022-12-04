@@ -1,22 +1,34 @@
 import './App.css';
 import { Button } from 'react-bootstrap';
 import { useState } from 'react';
+import axios from 'axios';
 
 function SignInValid()
 { 
   const [username,setUsername]= useState();
   const [password,setPassword]= useState();
-  const [userdata,setUserdata]= useState([]);
 
   function loginDetails(){
   console.log("User Login Details");
-  let obj = {"Username":username,"Password":password}
-  userdata.push(obj);
-  setUserdata([...userdata]);
-  console.log(userdata);
-  document.getElementById(1).value= '';
-  document.getElementById(2).value= '';
+
+  if(!username){
+    alert("Please Enter Username")
+    return false;
   }
+  if(!password){
+    alert("Please Enter Password")
+    return false;
+  }
+  
+  
+
+  const formData = new FormData ();
+  formData.append("username",username);
+  formData.append("password",password);
+  
+  axios.post("user-login",formData,{header:{"content-type":"multipart/form-data"}})
+  }
+
   return(
     <>
     Username:<input id='1' type="text" onChange={(e)=>{setUsername(e.target.value);}}/><br/>

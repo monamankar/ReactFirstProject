@@ -17,10 +17,27 @@ function SignUpValid(){
   const [city,setCity]=useState();
   const [states,setStates]=useState();
   const [image,setImage]=useState();
-  const [userdata,setUserData]=useState([]);
 
   function submitData(){
     console.log("User Sign-up Details");
+    if(!mobileno){
+      alert("Please Enter Mobile No")
+      return false;
+    }
+    else{
+      if(!Number.isInteger(mobileno)){
+      alert("Please Enter Valid Mobile No")
+      return false;
+      }
+    }
+
+
+
+
+
+
+
+
     const formData = new FormData ();
     formData.append("name",name);
     formData.append("mobileno",mobileno);

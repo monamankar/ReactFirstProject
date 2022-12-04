@@ -27,20 +27,7 @@ function SignUp(){
     console.log(userdata);
     }
   
-  const formData = new FormData ();
-  formData.append("name",name);
-  formData.append("mobileno",mobileno);
-  formData.append("email",email);
-  formData.append("password",password);
-  formData.append("gender",gender);
-  formData.append("dateob",dateob);
-  formData.append("hobbies",hobbies);
-  formData.append("address",address);
-  formData.append("pincode",pincode);
-  formData.append("city",city);
-  formData.append("states",states);
-  if(image && image.target.files)
-  formData.append("image",image.target.files[0],image.target.files[0].name)
+
   
 
 
