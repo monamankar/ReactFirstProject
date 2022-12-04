@@ -10,9 +10,12 @@ function Layout1() {
       <a href='/contactus'>Contact-Us</a><br/>
       <a href='/login'>Log-in</a><br/>
       <a href='/register'>Registeration</a><br/>
-      <a href='/weather-api'>WeatherApi</a><br/>
       <a href='/sign-in'>Sign-In</a><br/>
       <a href='/sign-up'>Sign-Up</a><br/>
+      <a href='/sign-up-valid'>Sign-Up-Valid</a><br/>
+      <a href='/weather-api'>WeatherApi</a><br/>
+      <a href='/weather-api-six'>WeatherApiSix</a><br/>
+      <a href='/weather-api-cards'>WeatherApiCards</a><br/>
       
       <Outlet/>
     </div>

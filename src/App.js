@@ -11,6 +11,9 @@ import NoPage1 from './NoPage1'
 import WeatherApi from './WeatherApi';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
+import WeatherApiSix from './WeatherApiSix';
+import WeatherApiCards from './WeatherApiCards';
+import SignUpValid from './SignUpValid';
 
 function App() {
   return (
@@ -22,10 +25,14 @@ function App() {
         <Route path='contactus' element={<ContactUs1/>}/>
         <Route path='login' element={<Login1/>}/>
         <Route path='register' element={<Register1/>}/>
-        <Route path='weather-api' element={<WeatherApi/>}/>
         <Route path="*" element={<NoPage1 />}/>
         <Route path='sign-in' element={<SignIn/>}/>
         <Route path='sign-up' element={<SignUp/>}/>
+        <Route path='sign-up-valid' element={<SignUpValid/>}/>        
+        <Route path='weather-api' element={<WeatherApi/>}/>
+        <Route path='weather-api-six' element={<WeatherApiSix/>}/>
+        <Route path='weather-api-cards' element={<WeatherApiCards/>}/>
+        
       </Routes>
    
     </BrowserRouter>
