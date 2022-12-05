@@ -15,6 +15,7 @@ import WeatherApiSix from './WeatherApiSix';
 import WeatherApiCards from './WeatherApiCards';
 import SignUpValid from './SignUpValid';
 import SignInValid from './SignInValid';
+import SignInFormik from './SignInFormik';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
         <Route path='sign-in' element={<SignIn/>}/>
         <Route path='sign-up' element={<SignUp/>}/>
         <Route path='sign-in-valid' element={<SignInValid/>}/>
-        <Route path='sign-up-valid' element={<SignUpValid/>}/>        
+        <Route path='sign-up-valid' element={<SignUpValid/>}/>
+        <Route path='sign-in-formik' element={<SignInFormik/>}/>        
         <Route path='weather-api' element={<WeatherApi/>}/>
         <Route path='weather-api-six' element={<WeatherApiSix/>}/>
         <Route path='weather-api-cards' element={<WeatherApiCards/>}/>
